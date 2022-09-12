@@ -16,7 +16,7 @@
     		margin: 0;  
     		padding: 0;   
     		font-family: 'Arial';
-    		background-color: 	#bdb76b;  
+    		background-color: 	lightblue;  
         } 
 		.signup{  
         width: 382px;  
@@ -68,25 +68,44 @@
 	<h1> WELCOME TO FUTURE INSTITUTE OF ENGINEERING AND MANGEMENT </h1>
 	<hr>
 	<h2> Register Yourself</h2>
+	<br>
 	<div class="signup">
-	<form action="backend.php">
-		First Name:<input type="text">
-		Last Name:<input type="text"><br>
+	<form id="signup" method="get" action="signup.php">
+		<label><b>First Name:
+			</b>    
+        </label>  
+        <input type="text">
+		<label><b>Last Name:
+		</b>    
+        </label>  
+        <input type="text"><br>
 		<div>
-			Mobile number or Email address:<input type="text">
+		<label><b>Mobile number or Email address:
+		</b>    
+        </label>  
+        <input type="text">
 		</div>
 		<br>
 		<div>
-			Makaut Registration Number:<input type="text">
+		<label><b>Makaut Registration Number:
+		</b>    
+        </label>  
+        <input type="text">
 		</div>
 		<div>
-			New Password:<input type="text">
+		<label><b>New Password:
+			</b>    
+        </label>  
+        <input type="text">
 		</div>
 		<br>
 		<div>
-			Confirm Password:<input type="text">
+			<label><b>Confirm Password:
+				</b>    
+        </label>  
+        <input type="text">
 		</div>
-		
+		<hr>
 		<br>
 		<br><button type="submit">SIGNUP</button>
 	</form>
@@ -94,3 +113,4 @@
 	<hr>
 	
 </body>
+
