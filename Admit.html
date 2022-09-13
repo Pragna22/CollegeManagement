@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password</title>
-    <style>
+    <link rel="stylesheet" href="navbar.css">
+
+<style>
+  .topnav,#home a{
+  background-color: #008b8b;
+  overflow: hidden;
+}
         body{
             background-color: aqua;
+             font-family: 'Arial';
         }
         h1{
             text-align: center;
@@ -62,7 +69,38 @@
     </style>
 </head>
 <body>
-        <h1>Admission Form</h1><br>
+    <div id="logo">
+    <img src="fiem.jpg">
+  </div>
+  
+  <div id="home">
+     <a href="index.html">Home</a>
+  </div>
+ <div class="topnav">
+
+  
+  <a href="login.html" target="_blank">Login</a>
+  <div class="dropdown">
+    <button class="dropbtn">Extracurricular
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Xplorica</a>
+      <a href="#">Culrav</a>
+      <a href="#">Estrella</a>
+      <a href="#">Sportivo</a>
+    </div>
+  </div>
+  <a href="#Notice">Notice Board</a>
+  <!--<a href="#club" target="_blank">Extracurricular</a>-->
+  
+  <a href="#streams">Streams</a>
+  <a href="#gallery">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="About.html">About</a> 
+ 
+  </div> 
+         <br><h1>Admission Form</h1><br>
     <div class="admit">
         <form id="admit" method="get" action="admit.php">
             <label><b>Name:</b></label>  
