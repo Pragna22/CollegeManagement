@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+            color: powderblue;
+            background-color: purple;
+            box-sizing: border-box;
+            width: 600px;  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding: 80px;    
+            padding: 10px;  
+            border-radius: 15px ;
+        }
+        h1:hover{
+            color: green;
+            background-color: rgb(67, 208, 187);
+        }
+        .admit{
+                box-sizing: border-box;
+                padding: 12px 20px;
+                width: 682px;
+                background-color:#eb83d1;
+                text-align: center;
+                margin: auto;
+                margin: 20 0 0 450px;
+                padding: 80px;
+                padding: 20px;
+                border-radius: 20px;
+        }
+        h3{
+            box-sizing: border-box;
+            text-align: center;
+            background-color: yellow;
+            color: purple;
+            width: 600px;  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding: 80px;    
+            padding: 20px;  
+            border-radius: 15px ;   
+        }
+        input[type=text]{
+            color: darkblue;
+        } 
+        button{
+            color: peachpuff;
+            background-color: green;
+        } 
+        button:hover{
+            background-color: rgb(152, 66, 233);
+        }
+    </style>
+</head>
+<body>
+        <h1>Admission Form</h1><br>
+    <div class="admit">
+        <form id="admit" method="get" action="admit.php">
+            <label><b>Name:</b></label>  
+        <input type="text"><br><br>
+        <label><b>Guardian's Name</b></label>  
+        <input type="text" name="mytext"><br>
+        <div><br>
+        <label><b>Mobile number:</b></label>  
+        <input type="text">
+        </div>
+        <div><br>
+            <label><b>Email id :</b></label>  
+            <input type="text">
+            </div>
+        <br>
+        <div>
+        <label><b>WBJEE/JEE MAIN rank:</b></label>  
+        <input type="text">
+        </div><br>
+        <div>
+            <label><b>Aadhar/Pan/Voter id number :</b></label>  
+            <input type="text">
+            </div><br>
+        <div>
+        <label><b>Date of birth : </b></label>  
+        <input type="date" name="mydate">
+        </div><br>
+        <div>
+            <label><b>Gender : </b></label>  
+            Male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender">
+                Other <input type="radio" name="MyGender">
+        </div><br>
+        <div>
+            <label><b>Caste : </b></label>  
+            General <input type="radio" name="Mycaste"> SC <input type="radio" name="Mycaste">
+                ST <input type="radio" name="Mycaste"> OBC <input type="radio" name="Mycaste">
+        </div><br>
+        <label><b>Are you disabled ?</b></label>
+        Yes <input type="radio" name="mydisable"> No  <input type="radio" name="mydisable"><br><br>
+    <h3>You have to secure 60% marks in all of the subjects.You have to put in the correct marks in the following section.
+        <br>
+        Marks obtained in 10+2 examination.
+    </h3>
+        <div class="marks">
+                <div>
+                    <br><label><b>Maths  :</b></label> 
+                    &nbsp;&nbsp;<input type="number">
+                </div>
+                <div>
+                    <br><label><b>Physics : </b></label> 
+                    &nbsp;&nbsp;<input type="number">
+                </div>
+                <div><br><label><b> Chemistry :</b></label>
+                    &nbsp;&nbsp;<input type="number">
+                </div>
+                <div><br><label><b>Computer Science :</b></label>
+                     &nbsp;&nbsp;<input type="number">
+                </div>
+                <div>
+                    <br><label><b>Are you eligible? : </b></label>
+                    &nbsp;&nbsp;<input type="checkbox" name="Myeligibility" checked>
+                </div>
+                <div>
+                    <br>
+                    <label for="department"><b>Department</b></label>
+                    <select name="department" id="department">
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="IT">IT</option>
+                        <option value="ME">ME</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                    </select>
+                </div>
+                <div>
+                    <br><label><b>Why are you interested in this stream : </b></label>
+                    <br><br> <textarea name="MyText" cols="50"
+                        rows="10"></textarea>
+                </div><br><br>
+                    <button type="submit">Submit Now</button>
+                    <button type="reset">Reset Now</button>
+        </div>
+        </form>
+    </div>
+        
+        </div>
+    
+</body>
+</html>
