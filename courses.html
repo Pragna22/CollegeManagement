@@ -5,32 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-  
+	<link rel="stylesheet" href="navbar.css">   
 
-    </style>
+    <style >
+        .topnav,#home a{
+                 background-color: #008b8b;
+                 overflow: hidden;
+                }
+	h2{
+		text-align: center;
+		width: 150px;  
+    	margin: auto;  
+        padding: 20px; 
+		background-color: rgba(12, 80, 80, 0.433);
+		margin: 20 0 0 450px; 
+		border: 4px;
+		border-radius: 2px;
+		border-color: grey;
+	
+	}
+	body{
+		background-color: rgba(94, 248, 71, 0.79);
+		font-family: 'Arial';
+		padding: 20px;
+	}
+	h1{
+		text-align: center;
+	}
+	button {
+ 		 color: #f2f2f2;
+  		 text-align: center;
+  		 padding: 20px 16px;
+  		 text-decoration: underline;
+  		 font-size: 17px;
+  		 background-color: #b4e4e4;
+  		 margin: 4px;
+  		color: black;
+		  cursor: pointer;
+	}
+  </style>
 </head>
 <body>
+	<div id="logo">
+		<img src="fiem.jpg">
+	  </div>
+	  
+	  <div id="home">
+		 <a href="index.html">Home</a>
+	  </div>
+	 <div class="topnav">
+	
+	  
+	  <a href="login.html" target="_blank">Login</a>
+	  <div class="dropdown">
+		<button class="dropbtn">Extracurricular
+		  <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Xplorica</a>
+		  <a href="#">Culrav</a>
+		  <a href="#">Estrella</a>
+		  <a href="#">Sportivo</a>
+		</div>
+	  </div>
+	  <a href="#Notice">Notice Board</a>
+	  <!--<a href="#club" target="_blank">Extracurricular</a>-->
+	  
+	  <a href="#streams">Streams</a>
+	  <a href="#gallery">Gallery</a>
+	  <a href="contact.html">Contact</a>
+	  <a href="About.html" class="hre">About</a> 
+	  </div> 
     <h1>
     	FUTURE INSTITUTE OF ENGINEERING AND MANAGEMENT
     </h1>
     <hr>
-    <div>
+	<div>
+		FIEM offers many courses such as
+	</div>
+	<button onclick="myFunction1()">BTECH</button>
+	<p id="btech"></p>
+	<button onclick="myFunction2()">BCA</button>
+	<p id="bca"></p>
+	<button onclick="myFunction3()">BBA</button>
+	<p id="bba"></p>
+	<script>
+		function myFunction1() {
+			document.getElementById("btech").innerHTML = "FIEM offers numerous courses in all the major branches of B.Tech to help budding engineers grow. It maintains a high standard of quality education with dedicated faculty. The highest placement record is held by the students of B.tech in FIEM. With such study-friendly atmosphere and success record, FIEM stands out among the top B.Tech colleges in Kolkata and provides an ideal ambience to stimulate the teaching-learning process, culminating in the creation of skilled.";
+		}
+		function myFunction2() {
+			document.getElementById("bca").innerHTML = "The institute has successfully imparted quality education in the feild of Computer Applications over and above school education.";
+			
+		}
+		function myFunction3() {
+  	
+  		document.getElementById("bba").innerHTML = "Future Institute of Engineering and Management (FIEM), offers a management programme,to prepare students for a dynamic business environment keeping up to the latest perception of business and its essential aspects";
+		}
+</script>
+    <!-- <div>
     <h2>BTECH</h2>
+
     	<p>
     		FIEM offers numerous courses in all the major branches of B.Tech to help budding engineers grow. It maintains a high standard of quality education with dedicated faculty. The highest placement record is held by the students of B.tech in FIEM. With such study-friendly atmosphere and success record, FIEM stands out among the top B.Tech colleges in Kolkata and provides an ideal ambience to stimulate the teaching-learning process, culminating in the creation of skilled.
-    	</p>
+		</p>
 	</div>
 	<div>
     <h2>BCA</h2>
+	
     	<p>
     		 The institute has successfully imparted quality education in the feild of Computer Applications over and above school education.
     	</p>
 	</div>
 	<div>
     <h2>BBA</h2>
+
     	<p>
     		Future Institute of Engineering and Management (FIEM), offers a management programme,to prepare students for a dynamic business environment keeping up to the latest perception of business and its essential aspects.
     	</p>
-	</div>
+	</div> -->
 </body>
 </html>
