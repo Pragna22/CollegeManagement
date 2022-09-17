@@ -21,6 +21,18 @@
     text-align:center;
     color:blue;
   }
+  .timeDate{
+   
+            width: 382px;  
+            margin: auto;  
+            margin: 20 0 0 450px;  
+            padding: 80px;  
+            color: black;  
+            padding: 20px;  
+            background-color:#def094ba;
+            border-radius: 15px ;  
+            font-weight: bold; 
+  }
 </style>
 </head>
 <body>
@@ -28,7 +40,16 @@
   <div id="logo">
     <img src="fiem.jpg">
   </div>
-  
+  <div class="timeDate">
+    <span id="time"></span>
+    <script>
+      setInterval(updateTime, 1000);
+      function updateTime(){
+        time.innerHTML= new Date();
+      }
+    </script>
+  </div>
+  <br>
   <div id="home">
      <a href="index.html">Home</a>
   </div>
