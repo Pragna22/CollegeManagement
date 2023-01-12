@@ -6,80 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPORTIVO</title>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="navbar.css">	
 
-    <style>
-      .topnav,#home a{
-        background-color: #008b8b;
-        overflow: hidden;
-        font-family: Arial;
-        }
+	<style >
+		.topnav,#home a{
+ 				 background-color: #008b8b;
+ 				 overflow: hidden;
+                  font-family: 'Arial';
+				}
         body {
-            background-color: blue;
+            background-color: lightgreen;
+            
+        }
+
+        .head {
+            float: center;
             text-align: center;
+            color: bisque;
+            background-color: blueviolet;
+            box-sizing: border-box;
+            margin: 40px 0px 0px 650px; 
+            width: 350px;
+            border-radius: 20px;
+            padding: 15px;
+          
+            font-size: large;
+            font-weight: bold;
+        }
+        body{
+            background-color: lightpink;
+        }
+        .about{
+            text-align: center;
+            color: darkblue;
+            background-color: lightgreen;
+            box-sizing: border-box;
+            margin: auto;
+            margin: 20px 0px 0px 450px;
+            width: 750px;
+            border-radius: 20px;
+            padding: 20px;
+            padding-right: 18px;
+            font-size: larger;
+            float: center;
         }
         h2{
             text-align: center;
-            box-sizing: border-box;
-            background-color: rgb(255, 97, 229);
-            color: black;
-            margin: auto;
-            margin: 20px 0px 0px 450px;
-            width: 520px;
-            border-radius: 20px;
-            padding: 20px;
-            padding-right: 18px;
+            float: center;
         }
-        h3{
-            text-align: center;
-            color: red;
-            background-color: yellow;
-            box-sizing: border-box;
-            margin: auto;
-            margin: 20px 0px 0px 450px;
-            width: 520px;
-            float: auto;
-            border-radius: 20px;
-            padding: 20px;
-            padding-right: 18px;
-            font-size: larger;
+        #club1 img {
+            width: 200px; 
+            float: left; 
+            margin-right: 10px; 
         }
-        .menu{
-            text-align: center;
-            color: rgb(35, 112, 19);
-            background-color: rgb(0, 255, 217);
-            box-sizing: border-box;
-            margin: auto;
-            margin: 20px 0px 0px 450px;
-            width: 650px;
-            border-radius: 20px;
-            padding: 20px;
-            padding-right: 18px;
-            font-size: larger;
-        }
-        button {
-            background-color: lightgoldenrodyellow;
-            width: 350px;
-            text-emphasis: bold;
-        }
-        
-        button {
+         .fest {
             text-align: center;
             box-sizing: border-box;
-  			background-color: #9104aa;
-  			color: white;
-            width: 272px;
-            margin: auto;
-                margin: 20 0 0 40px;
-                padding: 20px;
-                padding: 20px;
-                padding-bottom: 20px;
-                border-radius: 20px;
-        }
-        .logo{
-            float: left;
-            border-radius: 20px;
-        }
+            margin: 40px 0px 0px 750px; 
+            width: 100px;
+            border-radius: 20px; 
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            background: yellow;
+            position: absolute;
+         }
     </style>
 </head>
 
@@ -114,17 +105,24 @@
       <a href="contact.html">Contact</a>
       <a href="About.html">About</a> 
       </div> 
-    <div class="logo">
-        <img src="sportivo.jpeg" alt="">
-    </div><br><br><br><br><br>
-    <h2><marquee>SPORTIVO</marquee></h2><br>
-    <h3>A B O U T &nbsp; U S</h3>
-    <div class="menu">
-        <!-- <label><b><button type="none">A B O U T &nbsp; U S</button></b></label><br> -->
-
-        <p><em>Team Future Education initiatives, treats sports as the integral part of education since its inception 2001. Sportivo, a Team Future Education initiated Sports Club, was formed in 2016 to converge diversified and divided sports enterprises under a unified umbrella. Our arsenal comprises of passionate sports enthusiasts largely from student community, teachers, and key management members.</b></label></em></p>
+      <div id="club1">
+        <img src="sportivo.jpeg">
+      </div>
+    <div class="head">
+        <h2>
+            <marquee>SPORTIVO</marquee>
+        </h2>
+    </div><br>
+    
+    <div class="abt">
+        <h2>ABOUT US</h2>
+        <div class="about">
+            <p><em>Team Future Education initiatives, treats sports as the integral part of education since its inception 2001. Sportivo, a Team Future Education initiated Sports Club, was formed in 2016 to converge diversified and divided sports enterprises under a unified umbrella. Our arsenal comprises of passionate sports enthusiasts largely from student community, teachers, and key management members.</b></label></em></p>
+        </div>
     </div>
-        <a href="spofest.html"><br><button type="okay">F E S T S</button></a>
+    <div class="fest">
+    <br><a href="spofest.html.html">FESTS</a>
+</div>
 </body>
 
 </html>
